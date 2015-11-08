@@ -36,9 +36,12 @@ Public Class Potenciometro
             Return _valor
         End Get
         Set(value As Double)
-            _valor = value
+            If value >= _min And value <= _max Then
+                _valor = value - _min
+            Else
+                _valor = 0
+            End If
             recalcular()
-            Me.Invalidate()
         End Set
     End Property
 
@@ -129,5 +132,18 @@ Public Class Potenciometro
 
         RaiseEvent CambioValor(_porcentaje)
 
+    End Sub
+
+    Private Sub Potenciometro_Layout(sender As Object, e As LayoutEventArgs) Handles Me.Layout
+        Select Case e.AffectedProperty
+            Case "Bounds"
+                Me.Height = CInt(Me.Width * 0.1)
+
+
+        End Select
+    End Sub
+
+    Private Sub Potenciometro_Resize(sender As Object, e As EventArgs) Handles Me.Resize
+        Me.Invalidate()
     End Sub
 End Class
