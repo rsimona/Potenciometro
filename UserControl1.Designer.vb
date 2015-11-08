@@ -1,8 +1,8 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class UserControl1
+Partial Class Potenciometro
     Inherits System.Windows.Forms.UserControl
 
-    'UserControl1 reemplaza a Dispose para limpiar la lista de componentes.
+    'Potenciometro reemplaza a Dispose para limpiar la lista de componentes.
     <System.Diagnostics.DebuggerNonUserCode()> _
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
@@ -114,7 +114,7 @@ Partial Class UserControl1
         Me.Percent90.Size = New System.Drawing.Size(28, 12)
         Me.Percent90.TabIndex = 9
         '
-        'UserControl1
+        'Potenciometro
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -128,7 +128,7 @@ Partial Class UserControl1
         Me.Controls.Add(Me.Percent20)
         Me.Controls.Add(Me.Percent10)
         Me.Controls.Add(Me.Percent0)
-        Me.Name = "UserControl1"
+        Me.Name = "Potenciometro"
         Me.Size = New System.Drawing.Size(360, 32)
         Me.ResumeLayout(False)
 

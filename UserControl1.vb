@@ -1,6 +1,6 @@
 ﻿Imports System.ComponentModel
 
-Public Class UserControl1
+Public Class Potenciometro
     Private _max As Double = 100
     Private _min As Double = 0
     Private _valor As Double = 0
@@ -38,6 +38,7 @@ Public Class UserControl1
         Set(value As Double)
             _valor = value
             recalcular()
+            Me.Invalidate()
         End Set
     End Property
 
@@ -46,87 +47,85 @@ Public Class UserControl1
 
         _porcentaje = (_valor * 100) / (_max - _min)
 
-        Dim i As Integer
-        Select Case _porcentaje
-            Case 0
-                For i = 0 To 9
-                    luces(i).BackColor = Color.DarkGray
-                Next
-            Case (_porcentaje > 0 And _porcentaje <= 10)
-                luces(0).BackColor = Color.Chartreuse
-                For i = 1 To 9
-                    luces(i).BackColor = Color.DarkGray
-                Next
-            Case (_porcentaje > 10 And _porcentaje <= 20)
-                For i = 0 To 1
-                    luces(0).BackColor = Color.Chartreuse
-                Next
-                For i = 2 To 9
-                    luces(i).BackColor = Color.DarkGray
-                Next
-            Case (_porcentaje > 20 And _porcentaje <= 30)
-                For i = 0 To 2
-                    luces(i).BackColor = Color.Chartreuse
-                Next
-                For i = 3 To 9
-                    luces(i).BackColor = Color.DarkGray
-                Next
-            Case (_porcentaje > 30 And _porcentaje <= 40)
-                For i = 0 To 3
-                    luces(i).BackColor = Color.Chartreuse
-                Next
-                For i = 4 To 9
-                    luces(i).BackColor = Color.DarkGray
-                Next
-            Case (_porcentaje > 40 And _porcentaje <= 50)
-                For i = 0 To 4
-                    luces(i).BackColor = Color.Chartreuse
-                Next
-                For i = 5 To 9
-                    luces(i).BackColor = Color.DarkGray
-                Next
-            Case (_porcentaje > 50 And _porcentaje <= 60)
-                For i = 0 To 5
-                    luces(i).BackColor = Color.Chartreuse
-                Next
-                For i = 6 To 9
-                    luces(i).BackColor = Color.DarkGray
-                Next
-            Case (_porcentaje > 60 And _porcentaje <= 70)
-                For i = 0 To 5
-                    luces(i).BackColor = Color.Chartreuse
-                Next
-                luces(6).BackColor = Color.Yellow
-                For i = 7 To 9
-                    luces(i).BackColor = Color.DarkGray
-                Next
-            Case (_porcentaje > 70 And _porcentaje <= 80)
-                For i = 0 To 5
-                    luces(i).BackColor = Color.Chartreuse
-                Next
-                For i = 6 To 7
-                    luces(i).BackColor = Color.Yellow
-                Next
-                For i = 8 To 9
-                    luces(i).BackColor = Color.DarkGray
-                Next
-            Case (_porcentaje > 80 And _porcentaje <= 90)
-                For i = 0 To 5
-                    luces(i).BackColor = Color.Chartreuse
-                Next
-                For i = 6 To 8
-                    luces(i).BackColor = Color.Yellow
-                Next
-                luces(9).BackColor = Color.DarkGray
-            Case (_porcentaje > 90 And _porcentaje <= 100)
-                For i = 0 To 5
-                    luces(i).BackColor = Color.Chartreuse
-                Next
-                For i = 6 To 8
-                    luces(i).BackColor = Color.Yellow
-                Next
-                luces(9).BackColor = Color.Red
-        End Select
+        If _porcentaje = 0 Then
+            For i = 0 To 9
+                luces(i).BackColor = Color.DarkGray
+            Next
+        ElseIf (_porcentaje > 0 And _porcentaje <= 10)
+            luces(0).BackColor = Color.Chartreuse
+            For i = 1 To 9
+                luces(i).BackColor = Color.DarkGray
+            Next
+        ElseIf (_porcentaje > 10 And _porcentaje <= 20)
+            For i = 0 To 1
+                luces(i).BackColor = Color.Chartreuse
+            Next
+            For i = 2 To 9
+                luces(i).BackColor = Color.DarkGray
+            Next
+        ElseIf (_porcentaje > 20 And _porcentaje <= 30)
+            For i = 0 To 2
+                luces(i).BackColor = Color.Chartreuse
+            Next
+            For i = 3 To 9
+                luces(i).BackColor = Color.DarkGray
+            Next
+        ElseIf (_porcentaje > 30 And _porcentaje <= 40)
+            For i = 0 To 3
+                luces(i).BackColor = Color.Chartreuse
+            Next
+            For i = 4 To 9
+                luces(i).BackColor = Color.DarkGray
+            Next
+        ElseIf (_porcentaje > 40 And _porcentaje <= 50)
+            For i = 0 To 4
+                luces(i).BackColor = Color.Chartreuse
+            Next
+            For i = 5 To 9
+                luces(i).BackColor = Color.DarkGray
+            Next
+        ElseIf (_porcentaje > 50 And _porcentaje <= 60)
+            For i = 0 To 5
+                luces(i).BackColor = Color.Chartreuse
+            Next
+            For i = 6 To 9
+                luces(i).BackColor = Color.DarkGray
+            Next
+        ElseIf (_porcentaje > 60 And _porcentaje <= 70)
+            For i = 0 To 5
+                luces(i).BackColor = Color.Chartreuse
+            Next
+            luces(6).BackColor = Color.Yellow
+            For i = 7 To 9
+                luces(i).BackColor = Color.DarkGray
+            Next
+        ElseIf (_porcentaje > 70 And _porcentaje <= 80)
+            For i = 0 To 5
+                luces(i).BackColor = Color.Chartreuse
+            Next
+            For i = 6 To 7
+                luces(i).BackColor = Color.Yellow
+            Next
+            For i = 8 To 9
+                luces(i).BackColor = Color.DarkGray
+            Next
+        ElseIf (_porcentaje > 80 And _porcentaje <= 90)
+            For i = 0 To 5
+                luces(i).BackColor = Color.Chartreuse
+            Next
+            For i = 6 To 8
+                luces(i).BackColor = Color.Yellow
+            Next
+            luces(9).BackColor = Color.DarkGray
+        ElseIf (_porcentaje > 90 And _porcentaje <= 100)
+            For i = 0 To 5
+                luces(i).BackColor = Color.Chartreuse
+            Next
+            For i = 6 To 8
+                luces(i).BackColor = Color.Yellow
+            Next
+            luces(9).BackColor = Color.Red
+        End If
 
         RaiseEvent CambioValor(_porcentaje)
 
