@@ -36,7 +36,7 @@ Partial Class UserControl1
         '
         'Percent0
         '
-        Me.Percent0.BackColor = System.Drawing.SystemColors.ActiveBorder
+        Me.Percent0.BackColor = System.Drawing.Color.DarkGray
         Me.Percent0.Location = New System.Drawing.Point(13, 10)
         Me.Percent0.Name = "Percent0"
         Me.Percent0.Size = New System.Drawing.Size(28, 12)
@@ -44,7 +44,7 @@ Partial Class UserControl1
         '
         'Percent10
         '
-        Me.Percent10.BackColor = System.Drawing.SystemColors.ActiveBorder
+        Me.Percent10.BackColor = System.Drawing.Color.DarkGray
         Me.Percent10.Location = New System.Drawing.Point(47, 10)
         Me.Percent10.Name = "Percent10"
         Me.Percent10.Size = New System.Drawing.Size(28, 12)
@@ -52,7 +52,7 @@ Partial Class UserControl1
         '
         'Percent20
         '
-        Me.Percent20.BackColor = System.Drawing.SystemColors.ActiveBorder
+        Me.Percent20.BackColor = System.Drawing.Color.DarkGray
         Me.Percent20.Location = New System.Drawing.Point(81, 10)
         Me.Percent20.Name = "Percent20"
         Me.Percent20.Size = New System.Drawing.Size(28, 12)
@@ -60,7 +60,7 @@ Partial Class UserControl1
         '
         'Percent30
         '
-        Me.Percent30.BackColor = System.Drawing.SystemColors.ActiveBorder
+        Me.Percent30.BackColor = System.Drawing.Color.DarkGray
         Me.Percent30.Location = New System.Drawing.Point(115, 10)
         Me.Percent30.Name = "Percent30"
         Me.Percent30.Size = New System.Drawing.Size(28, 12)
@@ -68,7 +68,7 @@ Partial Class UserControl1
         '
         'Percent40
         '
-        Me.Percent40.BackColor = System.Drawing.SystemColors.ActiveBorder
+        Me.Percent40.BackColor = System.Drawing.Color.DarkGray
         Me.Percent40.Location = New System.Drawing.Point(149, 10)
         Me.Percent40.Name = "Percent40"
         Me.Percent40.Size = New System.Drawing.Size(28, 12)
@@ -76,7 +76,7 @@ Partial Class UserControl1
         '
         'Percent50
         '
-        Me.Percent50.BackColor = System.Drawing.SystemColors.ActiveBorder
+        Me.Percent50.BackColor = System.Drawing.Color.DarkGray
         Me.Percent50.Location = New System.Drawing.Point(183, 10)
         Me.Percent50.Name = "Percent50"
         Me.Percent50.Size = New System.Drawing.Size(28, 12)
@@ -84,7 +84,7 @@ Partial Class UserControl1
         '
         'Percent60
         '
-        Me.Percent60.BackColor = System.Drawing.SystemColors.ActiveBorder
+        Me.Percent60.BackColor = System.Drawing.Color.DarkGray
         Me.Percent60.Location = New System.Drawing.Point(217, 10)
         Me.Percent60.Name = "Percent60"
         Me.Percent60.Size = New System.Drawing.Size(28, 12)
@@ -92,7 +92,7 @@ Partial Class UserControl1
         '
         'Percent70
         '
-        Me.Percent70.BackColor = System.Drawing.SystemColors.ActiveBorder
+        Me.Percent70.BackColor = System.Drawing.Color.DarkGray
         Me.Percent70.Location = New System.Drawing.Point(251, 10)
         Me.Percent70.Name = "Percent70"
         Me.Percent70.Size = New System.Drawing.Size(28, 12)
@@ -100,7 +100,7 @@ Partial Class UserControl1
         '
         'Percent80
         '
-        Me.Percent80.BackColor = System.Drawing.SystemColors.ActiveBorder
+        Me.Percent80.BackColor = System.Drawing.Color.DarkGray
         Me.Percent80.Location = New System.Drawing.Point(285, 10)
         Me.Percent80.Name = "Percent80"
         Me.Percent80.Size = New System.Drawing.Size(28, 12)
@@ -108,7 +108,7 @@ Partial Class UserControl1
         '
         'Percent90
         '
-        Me.Percent90.BackColor = System.Drawing.SystemColors.ActiveBorder
+        Me.Percent90.BackColor = System.Drawing.Color.DarkGray
         Me.Percent90.Location = New System.Drawing.Point(319, 10)
         Me.Percent90.Name = "Percent90"
         Me.Percent90.Size = New System.Drawing.Size(28, 12)
