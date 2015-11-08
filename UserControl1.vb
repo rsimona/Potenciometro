@@ -137,13 +137,31 @@ Public Class Potenciometro
     Private Sub Potenciometro_Layout(sender As Object, e As LayoutEventArgs) Handles Me.Layout
         Select Case e.AffectedProperty
             Case "Bounds"
-                Me.Height = CInt(Me.Width * 0.1)
+                Me.Height = CInt(Me.Width * 0.05634)
 
-
+                Dim largo As Double = Me.Height * 0.5
+                Dim borde As Double = Me.Height * 0.25
+                Dim largoPieza As Double = largo * 3
+                Percent0.Location = New Point(borde, borde)
+                Percent0.Size = New Size(largoPieza, largo)
+                Percent10.Location = New Point(Percent0.Location.X + largoPieza + borde, borde)
+                Percent10.Size = New Size(largoPieza, largo)
+                Percent20.Location = New Point(Percent10.Location.X + largoPieza + borde, borde)
+                Percent20.Size = New Size(largoPieza, largo)
+                Percent30.Location = New Point(Percent20.Location.X + largoPieza + borde, borde)
+                Percent30.Size = New Size(largoPieza, largo)
+                Percent40.Location = New Point(Percent30.Location.X + largoPieza + borde, borde)
+                Percent40.Size = New Size(largoPieza, largo)
+                Percent50.Location = New Point(Percent40.Location.X + largoPieza + borde, borde)
+                Percent50.Size = New Size(largoPieza, largo)
+                Percent60.Location = New Point(Percent50.Location.X + largoPieza + borde, borde)
+                Percent60.Size = New Size(largoPieza, largo)
+                Percent70.Location = New Point(Percent60.Location.X + largoPieza + borde, borde)
+                Percent70.Size = New Size(largoPieza, largo)
+                Percent80.Location = New Point(Percent70.Location.X + largoPieza + borde, borde)
+                Percent80.Size = New Size(largoPieza, largo)
+                Percent90.Location = New Point(Percent80.Location.X + largoPieza + borde, borde)
+                Percent90.Size = New Size(largoPieza, largo)
         End Select
-    End Sub
-
-    Private Sub Potenciometro_Resize(sender As Object, e As EventArgs) Handles Me.Resize
-        Me.Invalidate()
     End Sub
 End Class

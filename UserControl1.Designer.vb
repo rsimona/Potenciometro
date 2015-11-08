@@ -37,81 +37,81 @@ Partial Class Potenciometro
         'Percent0
         '
         Me.Percent0.BackColor = System.Drawing.Color.DarkGray
-        Me.Percent0.Location = New System.Drawing.Point(13, 10)
+        Me.Percent0.Location = New System.Drawing.Point(5, 5)
         Me.Percent0.Name = "Percent0"
-        Me.Percent0.Size = New System.Drawing.Size(28, 12)
+        Me.Percent0.Size = New System.Drawing.Size(30, 10)
         Me.Percent0.TabIndex = 0
         '
         'Percent10
         '
         Me.Percent10.BackColor = System.Drawing.Color.DarkGray
-        Me.Percent10.Location = New System.Drawing.Point(47, 10)
+        Me.Percent10.Location = New System.Drawing.Point(40, 5)
         Me.Percent10.Name = "Percent10"
-        Me.Percent10.Size = New System.Drawing.Size(28, 12)
+        Me.Percent10.Size = New System.Drawing.Size(30, 10)
         Me.Percent10.TabIndex = 1
         '
         'Percent20
         '
         Me.Percent20.BackColor = System.Drawing.Color.DarkGray
-        Me.Percent20.Location = New System.Drawing.Point(81, 10)
+        Me.Percent20.Location = New System.Drawing.Point(75, 5)
         Me.Percent20.Name = "Percent20"
-        Me.Percent20.Size = New System.Drawing.Size(28, 12)
+        Me.Percent20.Size = New System.Drawing.Size(30, 10)
         Me.Percent20.TabIndex = 2
         '
         'Percent30
         '
         Me.Percent30.BackColor = System.Drawing.Color.DarkGray
-        Me.Percent30.Location = New System.Drawing.Point(115, 10)
+        Me.Percent30.Location = New System.Drawing.Point(110, 5)
         Me.Percent30.Name = "Percent30"
-        Me.Percent30.Size = New System.Drawing.Size(28, 12)
+        Me.Percent30.Size = New System.Drawing.Size(30, 10)
         Me.Percent30.TabIndex = 3
         '
         'Percent40
         '
         Me.Percent40.BackColor = System.Drawing.Color.DarkGray
-        Me.Percent40.Location = New System.Drawing.Point(149, 10)
+        Me.Percent40.Location = New System.Drawing.Point(145, 5)
         Me.Percent40.Name = "Percent40"
-        Me.Percent40.Size = New System.Drawing.Size(28, 12)
+        Me.Percent40.Size = New System.Drawing.Size(30, 10)
         Me.Percent40.TabIndex = 4
         '
         'Percent50
         '
         Me.Percent50.BackColor = System.Drawing.Color.DarkGray
-        Me.Percent50.Location = New System.Drawing.Point(183, 10)
+        Me.Percent50.Location = New System.Drawing.Point(180, 5)
         Me.Percent50.Name = "Percent50"
-        Me.Percent50.Size = New System.Drawing.Size(28, 12)
+        Me.Percent50.Size = New System.Drawing.Size(30, 10)
         Me.Percent50.TabIndex = 5
         '
         'Percent60
         '
         Me.Percent60.BackColor = System.Drawing.Color.DarkGray
-        Me.Percent60.Location = New System.Drawing.Point(217, 10)
+        Me.Percent60.Location = New System.Drawing.Point(215, 5)
         Me.Percent60.Name = "Percent60"
-        Me.Percent60.Size = New System.Drawing.Size(28, 12)
+        Me.Percent60.Size = New System.Drawing.Size(30, 10)
         Me.Percent60.TabIndex = 6
         '
         'Percent70
         '
         Me.Percent70.BackColor = System.Drawing.Color.DarkGray
-        Me.Percent70.Location = New System.Drawing.Point(251, 10)
+        Me.Percent70.Location = New System.Drawing.Point(250, 5)
         Me.Percent70.Name = "Percent70"
-        Me.Percent70.Size = New System.Drawing.Size(28, 12)
+        Me.Percent70.Size = New System.Drawing.Size(30, 10)
         Me.Percent70.TabIndex = 7
         '
         'Percent80
         '
         Me.Percent80.BackColor = System.Drawing.Color.DarkGray
-        Me.Percent80.Location = New System.Drawing.Point(285, 10)
+        Me.Percent80.Location = New System.Drawing.Point(285, 5)
         Me.Percent80.Name = "Percent80"
-        Me.Percent80.Size = New System.Drawing.Size(28, 12)
+        Me.Percent80.Size = New System.Drawing.Size(30, 10)
         Me.Percent80.TabIndex = 8
         '
         'Percent90
         '
         Me.Percent90.BackColor = System.Drawing.Color.DarkGray
-        Me.Percent90.Location = New System.Drawing.Point(319, 10)
+        Me.Percent90.Location = New System.Drawing.Point(320, 5)
         Me.Percent90.Name = "Percent90"
-        Me.Percent90.Size = New System.Drawing.Size(28, 12)
+        Me.Percent90.Size = New System.Drawing.Size(30, 10)
         Me.Percent90.TabIndex = 9
         '
         'Potenciometro
@@ -129,7 +129,7 @@ Partial Class Potenciometro
         Me.Controls.Add(Me.Percent10)
         Me.Controls.Add(Me.Percent0)
         Me.Name = "Potenciometro"
-        Me.Size = New System.Drawing.Size(360, 32)
+        Me.Size = New System.Drawing.Size(355, 20)
         Me.ResumeLayout(False)
 
     End Sub
